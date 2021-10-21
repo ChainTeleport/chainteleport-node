@@ -1,8 +1,26 @@
-# Substrate Node Template
+<div align="center">
+<img src="https://avatars.githubusercontent.com/u/88412263?s=400&u=949fd9d2b1dee095ed267cfc288b09101dc6e753&v=4">
+</div>
 
-[![Try on playground](https://img.shields.io/badge/Playground-Node_Template-brightgreen?logo=Parity%20Substrate)](https://docs.substrate.io/playground/) [![Matrix](https://img.shields.io/matrix/substrate-technical:matrix.org)](https://matrix.to/#/#substrate-technical:matrix.org)
+<div align="center">
+<h1>ChainTeleport</h1>
+<h2>:fire_engine: Cross Chain Scavanger and Rescuer :ambulance:</h2>
+:hammer_and_wrench: Every blockchain has their purposes, worth to be saved. :adhesive_bandage:
+<br>
+Build on Substrate.
+  
+<br>
+<br>
+  
+[![Substrate version](https://img.shields.io/badge/Substrate-3.0.0-brightgreen?logo=Parity%20Substrate)](https://substrate.dev/)
+  
+</div>
 
-A fresh FRAME-based [Substrate](https://www.substrate.io/) node, ready for hacking :rocket:
+---
+
+ChainTeleport is a decentralized platform for dying blockchain networks worth to be rescued. It's uses cross chain token transfer to support its process.
+
+ChainTeleport nodes are built using Substrate, Parity's blockchain framework that allows for quick development of blockchains customizable by its pallets system.
 
 ## Getting Started
 
