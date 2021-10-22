@@ -62,7 +62,7 @@ Once the project has been built, the following command can be used to explore al
 subcommands:
 
 ```sh
-./target/release/node-template -h
+./target/release/chainteleport -h
 ```
 
 ## Run
@@ -76,19 +76,19 @@ node.
 This command will start the single-node development chain with persistent state:
 
 ```bash
-./target/release/node-template --dev
+./target/release/chainteleport --dev
 ```
 
 Purge the development chain's state:
 
 ```bash
-./target/release/node-template purge-chain --dev
+./target/release/chaniteleport purge-chain --dev
 ```
 
 Start the development chain with detailed logging:
 
 ```bash
-RUST_BACKTRACE=1 ./target/release/node-template -ldebug --dev
+RUST_BACKTRACE=1 ./target/release/chainteleport -ldebug --dev
 ```
 
 ### Connect with Polkadot-JS Apps Front-end
@@ -146,7 +146,7 @@ After the node has been [built](#build), refer to the embedded documentation to 
 capabilities and configuration parameters that it exposes:
 
 ```shell
-./target/release/node-template --help
+./target/release/chainteleport --help
 ```
 
 ### Runtime
@@ -207,15 +207,15 @@ Then run the following command to start a single node development chain.
 
 This command will firstly compile your code, and then start a local development network. You can
 also replace the default command
-(`cargo build --release && ./target/release/node-template --dev --ws-external`)
+(`cargo build --release && ./target/release/chainteleport --dev --ws-external`)
 by appending your own. A few useful ones are as follow.
 
 ```bash
 # Run Substrate node without re-compiling
-./scripts/docker_run.sh ./target/release/node-template --dev --ws-external
+./scripts/docker_run.sh ./target/release/chainteleport --dev --ws-external
 
 # Purge the local dev chain
-./scripts/docker_run.sh ./target/release/node-template purge-chain --dev
+./scripts/docker_run.sh ./target/release/chainteleport purge-chain --dev
 
 # Check whether the code is compilable
 ./scripts/docker_run.sh cargo check
