@@ -24,7 +24,7 @@ ChainTeleport nodes are built using Substrate, Parity's blockchain framework tha
 
 ## Getting Started
 
-Follow the steps below to get started with the Node Template, or get it up and running right from
+Follow the steps below to get started with the ChainTeleport Node, or get it up and running right from
 your browser in just a few clicks using
 the [Substrate Playground](https://docs.substrate.io/playground/) :hammer_and_wrench:
 
@@ -41,7 +41,7 @@ First, complete the [basic Rust setup instructions](./docs/rust-setup.md).
 
 ### Run
 
-Use Rust's native `cargo` command to build and launch the template node:
+Use Rust's native `cargo` command to build and launch the node:
 
 ```sh
 cargo run --release -- --dev --tmp
@@ -62,7 +62,7 @@ Once the project has been built, the following command can be used to explore al
 subcommands:
 
 ```sh
-./target/release/node-template -h
+./target/release/chainteleport-node -h
 ```
 
 ## Run
@@ -76,34 +76,34 @@ node.
 This command will start the single-node development chain with persistent state:
 
 ```bash
-./target/release/node-template --dev
+./target/release/chainteleport-node --dev
 ```
 
 Purge the development chain's state:
 
 ```bash
-./target/release/node-template purge-chain --dev
+./target/release/chainteleport-node purge-chain --dev
 ```
 
 Start the development chain with detailed logging:
 
 ```bash
-RUST_BACKTRACE=1 ./target/release/node-template -ldebug --dev
+RUST_BACKTRACE=1 ./target/release/chainteleport-node -ldebug --dev
 ```
 
 ### Connect with Polkadot-JS Apps Front-end
 
-Once the node template is running locally, you can connect it with **Polkadot-JS Apps** front-end
+Once the node is running locally, you can connect it with **Polkadot-JS Apps** front-end
 to interact with your chain. [Click
 here](https://polkadot.js.org/apps/#/explorer?rpc=ws://localhost:9944) connecting the Apps to your
-local node template.
+local node.
 
 ### Multi-Node Local Testnet
 
 If you want to see the multi-node consensus algorithm in action, refer to our
 [Start a Private Network tutorial](https://docs.substrate.io/tutorials/v3/private-network).
 
-## Template Structure
+## Project Structure
 
 A Substrate project such as this consists of a number of components that are spread across a few
 directories.
@@ -146,7 +146,7 @@ After the node has been [built](#build), refer to the embedded documentation to 
 capabilities and configuration parameters that it exposes:
 
 ```shell
-./target/release/node-template --help
+./target/release/chainteleport-node --help
 ```
 
 ### Runtime
@@ -163,7 +163,7 @@ called "pallets". At the heart of FRAME is a helpful
 create pallets and flexibly compose them to create blockchains that can address
 [a variety of needs](https://www.substrate.io/substrate-users/).
 
-Review the [FRAME runtime implementation](./runtime/src/lib.rs) included in this template and note
+Review the [FRAME runtime implementation](./runtime/src/lib.rs) included in this project and note
 the following:
 
 - This file configures several pallets to include in the runtime. Each pallet configuration is
@@ -207,15 +207,15 @@ Then run the following command to start a single node development chain.
 
 This command will firstly compile your code, and then start a local development network. You can
 also replace the default command
-(`cargo build --release && ./target/release/node-template --dev --ws-external`)
+(`cargo build --release && ./target/release/chainteleport-node --dev --ws-external`)
 by appending your own. A few useful ones are as follow.
 
 ```bash
 # Run Substrate node without re-compiling
-./scripts/docker_run.sh ./target/release/node-template --dev --ws-external
+./scripts/docker_run.sh ./target/release/chainteleport-node --dev --ws-external
 
 # Purge the local dev chain
-./scripts/docker_run.sh ./target/release/node-template purge-chain --dev
+./scripts/docker_run.sh ./target/release/chainteleport-node purge-chain --dev
 
 # Check whether the code is compilable
 ./scripts/docker_run.sh cargo check
