@@ -1,4 +1,4 @@
-use node_template_runtime::{
+use chainteleport_runtime::{
 	AccountId, AuraConfig, BalancesConfig, GenesisConfig, GrandpaConfig, Signature, SudoConfig,
 	SystemConfig, WASM_BINARY,
 };
