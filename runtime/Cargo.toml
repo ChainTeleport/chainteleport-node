@@ -118,12 +118,6 @@ git = 'https://github.com/paritytech/substrate.git'
 tag = 'monthly-2021-10'
 version = '4.0.0-dev'
 
-[dependencies.pallet-nicks]
-default-features = false
-git = 'https://github.com/paritytech/substrate.git'
-tag = 'monthly-2021-10'
-version = '4.0.0-dev'
-
 [dependencies.scale-info]
 default-features = false
 features = ['derive']
@@ -190,6 +184,13 @@ tag = 'monthly-2021-10'
 version = '4.0.0-dev'
 
 [dependencies.sp-version]
+default-features = false
+git = 'https://github.com/paritytech/substrate.git'
+tag = 'monthly-2021-10'
+version = '4.0.0-dev'
+
+# import pallet nicks
+[dependencies.pallet-nicks]
 default-features = false
 git = 'https://github.com/paritytech/substrate.git'
 tag = 'monthly-2021-10'
