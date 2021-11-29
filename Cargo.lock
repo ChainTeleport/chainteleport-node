@@ -3809,7 +3809,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "pallet-onboarding"
+name = "pallet-poe"
 version = "3.0.0-monthly-2021-10"
 dependencies = [
  "frame-benchmarking",
@@ -3820,6 +3820,7 @@ dependencies = [
  "sp-core",
  "sp-io",
  "sp-runtime",
+ "sp-std",
 ]
 
 [[package]]
