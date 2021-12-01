@@ -196,6 +196,12 @@ git = 'https://github.com/paritytech/substrate.git'
 tag = 'monthly-2021-10'
 version = '4.0.0-dev'
 
+# import pallet poe
+[dependencies.pallet-poe]
+default-features = false
+path = '../pallets/poe'
+version = '3.0.0-monthly-2021-10'
+
 [features]
 default = ['std']
 runtime-benchmarks = [
@@ -226,6 +232,7 @@ std = [
     'pallet-transaction-payment-rpc-runtime-api/std',
     'pallet-transaction-payment/std',
     'pallet-nicks/std',
+    'pallet-poe/std',
     'sp-api/std',
     'sp-block-builder/std',
     'sp-consensus-aura/std',

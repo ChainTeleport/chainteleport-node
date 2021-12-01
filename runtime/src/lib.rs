@@ -312,6 +312,13 @@ impl pallet_nicks::Config for Runtime {
 	type Event = Event;
 }
 
+parameter_types! {}
+
+/// Configure the pallet-nicks
+impl pallet_poe::Config for Runtime {
+	type Event = Event;
+}
+
 // Create the runtime by composing the FRAME pallets that were previously configured.
 construct_runtime!(
 	pub enum Runtime where
@@ -331,6 +338,8 @@ construct_runtime!(
 		TemplateModule: pallet_template::{Pallet, Call, Storage, Event<T>},
 		// Pallet Nicks
 		Nicks: pallet_nicks::{Pallet, Call, Storage, Event<T>},
+		// Proof of Existence
+		ProofOfExistence: pallet_poe::{Pallet, Call, Storage, Event<T>},
 	}
 );
 
