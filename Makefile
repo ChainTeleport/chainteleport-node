@@ -37,3 +37,10 @@ run-bob:
 	--telemetry-url "wss://telemetry.polkadot.io/submit/ 0" \
 	--validator \
 	--bootnodes /ip4/127.0.0.1/tcp/30333/p2p/12D3KooWEyoppNCUx8Yx66oV9fJnriXwCcXwDDUA2kj6vnc6iDEp
+
+
+build-spec:
+	./target/release/chainteleport-node build-spec --disable-default-bootnode --chain local > customSpec.json
+
+convert-raw:
+	./target/release/chainteleport-node build-spec --chain=customSpec.json --raw --disable-default-bootnode > customSpecRaw.json
