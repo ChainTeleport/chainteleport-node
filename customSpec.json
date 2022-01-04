@@ -1,5 +1,5 @@
 {
-  "name": "My Custom Testnet",
+  "name": "ChainTeleport Testnet",
   "id": "local_testnet",
   "chainType": "Local",
   "bootNodes": [],
@@ -16,13 +16,13 @@
       },
       "aura": {
         "authorities": [
-          "5CfBuoHDvZ4fd8jkLQicNL8tgjnK8pVG9AiuJrsNrRAx6CNW",
+          "5GW68Jh5bUrEVfXw1bfRck2n3CHbUBn19g4XkYHckYBxFzwz",
           "5EJPj83tJuJtTVE2v7B9ehfM7jNT44CBFaPWicvBwYyUKBS6"
         ]
       },
       "grandpa": {
         "authorities": [
-          ["5CuqCGfwqhjGzSqz5mnq36tMe651mU9Ji8xQ4JRuUTvPcjVN", 1],
+          ["5EcTUmRYvwmXWKnYc7MSnXzF4te9fSErzLdEYrRtmpyL6DPF", 1],
           ["5FeJQsfmbbJLTH1pvehBxrZrT5kHvJFj84ZaY5LK7NU87gZS", 1]
         ]
       },

@@ -1,0 +1,53 @@
+Validator 01
+
+
+Aura:
+
+Secret phrase  	    fatigue answer grocery jewel jewel east license inflict repeat session bird mechanic
+Secret seed		    0xd44687c2ae9c9767027fc2beaf1e7f952bd1f5f1d579430de564245ca2f6ddb8
+Public key (hex)	0xc44d08fbe37cf789e60c5491648c9cf461f4a002244fdd9e576564f8a8053d6b
+Account ID	        0xc44d08fbe37cf789e60c5491648c9cf461f4a002244fdd9e576564f8a8053d6b
+Public key (SS58)   5GW68Jh5bUrEVfXw1bfRck2n3CHbUBn19g4XkYHckYBxFzwz
+SS58 Address	    5GW68Jh5bUrEVfXw1bfRck2n3CHbUBn19g4XkYHckYBxFzwz
+
+
+Grandpa:
+
+Secret Key URI       `0xd44687c2ae9c9767027fc2beaf1e7f952bd1f5f1d579430de564245ca2f6ddb8` is account:
+  Secret seed:       0xd44687c2ae9c9767027fc2beaf1e7f952bd1f5f1d579430de564245ca2f6ddb8
+  Public key (hex):  0x70afeba33312f96482371bc3c3273bfdd765d110570aa95bb4cd511b399c957a
+  Account ID:        0x70afeba33312f96482371bc3c3273bfdd765d110570aa95bb4cd511b399c957a
+  Public key (SS58): 5EcTUmRYvwmXWKnYc7MSnXzF4te9fSErzLdEYrRtmpyL6DPF
+  SS58 Address:      5EcTUmRYvwmXWKnYc7MSnXzF4te9fSErzLdEYrRtmpyL6DPF
+
+
+
+For illustration purposes, the second set of keys used in this tutorial are:
+
+Sr25519: 5EJPj83tJuJtTVE2v7B9ehfM7jNT44CBFaPWicvBwYyUKBS6 for aura.
+Ed25519: 5FeJQsfmbbJLTH1pvehBxrZrT5kHvJFj84ZaY5LK7NU87gZS for grandpa.
+
+
+Aura: 
+
+"aura": {
+    "authorities": [
+      "5GW68Jh5bUrEVfXw1bfRck2n3CHbUBn19g4XkYHckYBxFzwz",
+      "5EJPj83tJuJtTVE2v7B9ehfM7jNT44CBFaPWicvBwYyUKBS6"
+    ]
+  },
+
+Grandpa:
+
+"grandpa": {
+    "authorities": [
+      [
+        "5EcTUmRYvwmXWKnYc7MSnXzF4te9fSErzLdEYrRtmpyL6DPF",
+        1
+      ],
+      [
+        "5FeJQsfmbbJLTH1pvehBxrZrT5kHvJFj84ZaY5LK7NU87gZS",
+        1
+      ]
+    ]
+  },
