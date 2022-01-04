@@ -12,8 +12,10 @@ Build on Substrate.
 <br>
 <br>
   
-[![Substrate version](https://img.shields.io/badge/Substrate-3.0.0-brightgreen?logo=Parity%20Substrate)](https://substrate.dev/)
-  
+[![Substrate version](https://img.shields.io/badge/Substrate-3.0.0-brightgreen?logo=Parity%20Substrate)](https://substrate.io/)
+
+[![Playground](https://img.shields.io/badge/Personal-Playground-blue)](https://)
+
 </div>
 
 ---
